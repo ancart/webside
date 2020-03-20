@@ -1,0 +1,255 @@
+/*Control de CSS de caja main*/
+main {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+
+/*Control de CSS de caja section llamada #caja-principal y sus elememtos internos*/
+main section#caja-principal {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    float: none;
+}
+
+main section#caja-principal article:nth-child(1) {
+    width: 55%;
+    height: 100vh;
+    display: block;
+    position: relative;
+    margin: 0;
+    float: left;
+    
+    /* En la versión Escritorio cargamos la imagen desde el fondo de la primera caja article, usando CSS, para que luego en la versión Responsive ocultemos esta versión y la mostremos desde el HTML. Esto se hace como un truco de Resposive para que siempre la imagen ocupe el 55% establecido. */
+    background: url('../img/hades.jpg') no-repeat top center #fff;
+    background-size: cover;
+}
+main section#caja-principal article:nth-child(1) img {
+    /* Se ocuta esta imagen en la versión Escritorio para que luego en la versión Responsive la mostremos */
+    display: none;
+}
+
+
+
+main section#caja-principal article:nth-child(2) {
+    width: 45%;
+    height: 100vh;
+    display: block;
+    position: relative;
+    margin: 0;
+    float: right;
+    
+    /*Acá quise poner de color gris oscuro el fondo de la parte derecha*/
+    background: #ffffff;
+}
+main section#caja-principal article:nth-child(2) h1 {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0;
+    float: none;
+    position: relative;
+    
+font-family: 'Anton', sans-serif;
+    font-size: 2.35em;
+    font-weight: 250;
+    color: #000000;
+    text-align: left;
+    line-height: 1em;
+    padding: 10vh 0 0 10%;
+    letter-spacing: 0.100em;
+
+}
+main section#caja-principal article:nth-child(2) h2 {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0;
+    float: none;
+    position: relative;
+    
+ font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: #000000;
+    text-align: left;
+    line-height: 1em;
+    padding: 20px 0 0 10%;
+    letter-spacing: 0.175em;
+}
+
+main section#caja-principal article:nth-child(2) a {
+    width: 225px;
+    height: auto;
+    display: block;
+    margin: 50px 0 17px 10%;
+    float: none;
+    position: relative;
+    
+   font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 50px;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 0.055em;
+    background: #811517;
+    color: #fff;
+    border-radius: 3px;
+    transition: all 0.3s ease-in;
+}
+main section#caja-principal article:nth-child(2) a:hover {
+    background: #ce4830;
+    color: #fff;
+    transition: all 0.15s ease-out;
+}
+
+main section#caja-principal article:nth-child(2) p {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0;
+    float: none;
+    position: relative;
+    
+font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: #000000;
+    text-align: justify;
+    line-height: 1.45em;
+    padding: 8px 0 0 10%;
+    letter-spacing: 0.050em;
+}
+main section#caja-principal article:nth-child(2) p strong {
+    font-weight: 600;
+}
+
+main section#caja-principal article:nth-child(2) div#caja-info {
+    width: 80%;
+    height: 117px;
+    display: block;
+    margin: 0 0 0 10%;
+    float: none;
+    position: relative;
+}
+main section#caja-principal article:nth-child(2) div#caja-info div.caja-texto {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 45px 0 0;
+    float: left;
+    position: relative;
+}
+main section#caja-principal article:nth-child(2) div#caja-info div.caja-texto:nth-child(2) {
+    margin: 0;
+    float: right;
+    width: 125px;
+}
+
+main section#caja-principal article:nth-child(2) div#caja-info div.caja-texto h6 {
+   font-family: 'Roboto', sans-serif;
+    font-size: 0.85em;
+    font-weight: 300;
+    color: #000000;
+    text-align: left;
+    line-height: 1em;
+    padding: 45px 0 5px;
+    letter-spacing: 0.055em;
+    margin: 0;
+    text-transform: uppercase;
+}
+main section#caja-principal article:nth-child(2) div#caja-info div.caja-texto h4 {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.15em;
+    font-weight: 500;
+    color: #000000;
+    text-align: left;
+    line-height: 1em;
+    padding: 0 0 35px;
+    letter-spacing: 0.055em;
+    margin: 0;
+}
+
+main section#caja-principal article:nth-child(2) nav {
+    width: 80%;
+    height: 35px;
+    display: block;
+    margin: 0 0 0 10%;
+    float: none;
+    position: relative;
+}
+main section#caja-principal article:nth-child(2) nav a:nth-child(1)  {
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin: 0 10px 0 0;
+    float: right;
+    position: relative;
+    
+    background: #2D4541;
+    text-align: center;
+    border-radius: 100%;
+    padding: 5px;
+    transition: all 0.3s ease-in;
+}
+main section#caja-principal article:nth-child(2) nav a:nth-child(1) i {
+    text-align: center;
+    color: #fff;
+    padding: 10px 5px;
+    transition: all 0.3s ease-in;
+}
+main section#caja-principal article:nth-child(2) nav a:nth-child(1):hover {
+    background: #fff;
+    transition: all 0.15s ease-out;
+}
+main section#caja-principal article:nth-child(2) nav a:nth-child(1):hover i {
+    color: #2D4541;
+    transition: all 0.15s ease-out;
+}
+
+main section#caja-principal article:nth-child(2) nav a:nth-child(2)  {
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin: 0 10px 0 0;
+    float: right;
+    position: relative;
+    
+    background: #811517;
+    text-align: center;
+    border-radius: 100%;
+    padding: 5px;
+    transition: all 0.3s ease-in;
+}
+main section#caja-principal article:nth-child(2) nav a:nth-child(2) i {
+    text-align: center;
+    color: #fff;
+    padding: 10px 5px;
+    transition: all 0.3s ease-in;
+}
+main section#caja-principal article:nth-child(2) nav a:nth-child(2):hover {
+    background: #fff;
+    transition: all 0.15s ease-out;
+}
+main section#caja-principal article:nth-child(2) nav a:nth-child(2):hover i {
+    color: #811517;
+    transition: all 0.15s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
